@@ -24,8 +24,10 @@ namespace QuickKartWebService.Controllers
                 string url = "";
                 if (file.Length > 0)
                 {
-                    string connectionString = "DefaultEndpointsProtocol=https;AccountName=quickcartstorage;AccountKey=ka3p1LOkh6rM4cwBUv5/oDsmfccN2EF1lLF6YP09i618Nq4na2GuomcqZXuoQ8Mc4Ohcc0mD9Dbm+AStcGEfeQ==;EndpointSuffix=core.windows.net";
-                    string containerName = "data";
+                    // string connectionString = "DefaultEndpointsProtocol=https;AccountName=quickcartstorage;AccountKey=ka3p1LOkh6rM4cwBUv5/oDsmfccN2EF1lLF6YP09i618Nq4na2GuomcqZXuoQ8Mc4Ohcc0mD9Dbm+AStcGEfeQ==;EndpointSuffix=core.windows.net";
+                    // string containerName = "data";
+                    string connectionString = "DefaultEndpointsProtocol=https;AccountName=quickcartstorage03;AccountKey=ws9s7qrUJyugqkqcCrh0X3XHJpS4h7+vpChQ7vuRB0dihW+YeMAUBgXKrULJ2DudpZ3luHDCm3a4+AStLJEs1Q==;EndpointSuffix=core.windows.net";
+                    string containerName = "products";
                     BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
 
                     try
